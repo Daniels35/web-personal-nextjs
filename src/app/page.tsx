@@ -7,6 +7,7 @@ import ThemeSwitcher from '@/components/ThemeSwitcher';
 import HomeSection from '@/sections/HomeSection';
 import PortfolioSection from '@/sections/PortfolioSection';
 import AboutSection from '@/sections/AboutSection';
+import ContactSection from '@/sections/ContactSection';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
@@ -22,6 +23,7 @@ export default function Home() {
           <HomeSection isActive={activeSection === 'home'} />
           <PortfolioSection isActive={activeSection === 'portfolio'} />
           <AboutSection isActive={activeSection === 'about'} />
+          <ContactSection isActive={activeSection === 'contact'} />
         </div>
       </div>
 
