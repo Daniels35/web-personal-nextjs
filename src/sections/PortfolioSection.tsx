@@ -1,7 +1,10 @@
 "use client";
 
+import { useState } from 'react';
 import PortfolioCard, { Project } from '@/components/PortfolioCard';
+import ProjectModal from '@/components/ProjectModal';
 
+// SIMULACIÓN DE LA RESPUESTA DE TU API EN NODE.JS
 const mockProjects: Project[] = [
   {
     id: 1,
@@ -11,7 +14,7 @@ const mockProjects: Project[] = [
     image: "/images/portfolio/portfolio-4.webp",
     images: [
       "/images/portfolio/portfolio-4.webp", 
-      "/images/portfolio/portfolio-4.webp"
+      "/images/portfolio/portfolio-4.webp" // Puedes agregar más rutas de imágenes aquí
     ],
     link: "https://www.proyectologistica.online",
     githubLink: "https://github.com/Daniels35/firplak",
@@ -86,6 +89,9 @@ const mockProjects: Project[] = [
 ];
 
 export default function PortfolioSection({ isActive }: { isActive: boolean }) {
+  // Estado para controlar qué proyecto se muestra en el modal (null significa cerrado)
+  const [selectedProject, setSelectedProject] = useState<Project | null>(null);
+
   return (
     <section className={`portfolio section ${isActive ? 'active' : ''}`} id="portfolio">
       <div className="container">
@@ -102,13 +108,26 @@ export default function PortfolioSection({ isActive }: { isActive: boolean }) {
           </div>
         </div>
 
+        {/* Tarjetas de Proyectos */}
         <div className="cards-portafolio">
           {mockProjects.map((project) => (
-            <PortfolioCard key={project.id} project={project} />
+            <PortfolioCard 
+              key={project.id} 
+              project={project} 
+              onClick={() => setSelectedProject(project)} // Al hacer clic, abrimos el modal
+            />
           ))}
         </div>
 
       </div>
+
+      {/* Renderizado Condicional del Modal */}
+      {selectedProject && (
+        <ProjectModal 
+          project={selectedProject} 
+          onClose={() => setSelectedProject(null)} // Al cerrar, limpiamos el estado
+        />
+      )}
     </section>
   );
 }
