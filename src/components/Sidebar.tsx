@@ -1,6 +1,7 @@
 "use client";
 
 import Link from 'next/link';
+import { useState } from 'react';
 
 interface SidebarProps {
   activeSection: string;
@@ -8,13 +9,25 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ activeSection, setActiveSection }: SidebarProps) {
+
+
+  const [isOpen, setIsOpen] = useState(false);
+
+  const handleNavClick = (section: string) => {
+    setActiveSection(section);
+    setIsOpen(false);
+  };
+
   return (
-    <div className="aside">
+      <div className={`aside ${isOpen ? 'open' : ''}`}>
       <div className="logo">
         <Link href="#"><span>D</span>ANIEL</Link>
       </div>
       
-      <div className="nav-toggler">
+<div 
+        className={`nav-toggler ${isOpen ? 'open' : ''}`} 
+        onClick={() => setIsOpen(!isOpen)}
+      >
         <span></span>
       </div>
       
