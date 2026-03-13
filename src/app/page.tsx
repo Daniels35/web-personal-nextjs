@@ -6,6 +6,7 @@ import Sidebar from '@/components/Sidebar';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
 import HomeSection from '@/sections/HomeSection';
 import PortfolioSection from '@/sections/PortfolioSection';
+import AboutSection from '@/sections/AboutSection';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
@@ -20,6 +21,7 @@ export default function Home() {
         <div className="main-content">
           <HomeSection isActive={activeSection === 'home'} />
           <PortfolioSection isActive={activeSection === 'portfolio'} />
+          <AboutSection isActive={activeSection === 'about'} />
         </div>
       </div>
 
