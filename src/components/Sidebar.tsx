@@ -9,22 +9,21 @@ interface SidebarProps {
 }
 
 export default function Sidebar({ activeSection, setActiveSection }: SidebarProps) {
-
-
   const [isOpen, setIsOpen] = useState(false);
 
+  // Esta función cambia la sección Y cierra el menú en móviles
   const handleNavClick = (section: string) => {
     setActiveSection(section);
-    setIsOpen(false);
+    setIsOpen(false); 
   };
 
   return (
-      <div className={`aside ${isOpen ? 'open' : ''}`}>
+    <div className={`aside ${isOpen ? 'open' : ''}`}>
       <div className="logo">
         <Link href="#"><span>D</span>ANIEL</Link>
       </div>
       
-<div 
+      <div 
         className={`nav-toggler ${isOpen ? 'open' : ''}`} 
         onClick={() => setIsOpen(!isOpen)}
       >
@@ -36,7 +35,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
           <a 
             href="#home" 
             className={activeSection === 'home' ? 'active' : ''} 
-            onClick={(e) => { e.preventDefault(); setActiveSection('home'); }}
+            onClick={(e) => { e.preventDefault(); handleNavClick('home'); }}
           >
             <i className="fa fa-home"></i> Inicio
           </a>
@@ -45,7 +44,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
           <a 
             href="#portfolio" 
             className={activeSection === 'portfolio' ? 'active' : ''} 
-            onClick={(e) => { e.preventDefault(); setActiveSection('portfolio'); }}
+            onClick={(e) => { e.preventDefault(); handleNavClick('portfolio'); }}
           >
             <i className="fa fa-briefcase"></i> Portafolio
           </a>
@@ -54,7 +53,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
           <a 
             href="#about" 
             className={activeSection === 'about' ? 'active' : ''}
-            onClick={(e) => { e.preventDefault(); setActiveSection('about'); }}
+            onClick={(e) => { e.preventDefault(); handleNavClick('about'); }}
           >
             <i className="fa fa-user"></i> Sobre Mí
           </a>
@@ -63,7 +62,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
           <a 
             href="#contact" 
             className={activeSection === 'contact' ? 'active' : ''}
-            onClick={(e) => { e.preventDefault(); setActiveSection('contact'); }}
+            onClick={(e) => { e.preventDefault(); handleNavClick('contact'); }}
           >
             <i className="fa fa-comments"></i> Contacto
           </a>
