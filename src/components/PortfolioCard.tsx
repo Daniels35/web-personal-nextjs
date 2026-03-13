@@ -31,7 +31,6 @@ export default function PortfolioCard({ project, onClick }: PortfolioCardProps) 
   const techCol2 = project.technologies.slice(half);
 
   return (
-    // CAMBIO CLAVE: Envolvemos TODO en un div clickable y le quitamos los onClicks internos
     <div onClick={onClick} className="cursor-pointer" style={{ height: '100%' }}>
       <div className="square-container">
         <div className="border-light"></div>
