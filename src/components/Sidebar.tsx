@@ -17,10 +17,8 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
   };
 
   return (
-    // Agregamos 'flex flex-col h-screen' para controlar la distribución vertical
     <div className={`aside ${isOpen ? 'open' : ''} flex flex-col h-screen fixed left-0 top-0 z-[10] shadow-lg`}>
       
-      {/* 1. Logo (Parte Superior) */}
       <div className="logo py-8 text-center">
         <Link href="#" className="text-2xl font-bold tracking-widest">
           <span className="text-[var(--skin-color)]">D</span>ANIEL
@@ -34,9 +32,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
         <span></span>
       </div>
       
-      {/* 2. Navegación (Parte Central) 
-          'flex-grow' hace que ocupe todo el espacio disponible, 
-          'flex items-center' centra el menú verticalmente */}
+
       <nav className="flex-grow flex items-center justify-center">
         <ul className="nav w-full">
           {['home', 'portfolio', 'about', 'contact'].map((sec) => (
@@ -58,8 +54,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
         </ul>
       </nav>
 
-      {/* 3. Redes Sociales (Parte Inferior)
-          El 'pb-10' asegura que no se pegue al borde de abajo */}
+
       <div className="networks pb-10 flex justify-center gap-[25px]">
         <a 
           href="https://github.com/Daniels35" 
