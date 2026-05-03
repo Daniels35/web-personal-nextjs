@@ -16,11 +16,8 @@ export default function ContactSection({ isActive }: { isActive: boolean }) {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    
     console.log("Datos listos para enviar al backend:", formData);
-    
     alert("¡Mensaje enviado con éxito! (Simulación temporal)");
-    
     setFormData({ name: '', email: '', subject: '', message: '' });
   };
 
@@ -38,26 +35,55 @@ export default function ContactSection({ isActive }: { isActive: boolean }) {
         <h4 className="contact-sub-title padd-15">ESTOY A TU SERVICIO</h4>
 
         <div className="row">
-          {/* Cajas de Información */}
+          
           <div className="contact-info-item padd-15">
-            <div className="icon"><i className="fa fa-phone"></i></div>
-            <h4>Llámame</h4>
-            <p>+57 324 7878784</p>
+            <a 
+              href="https://wa.me/573135804424?text=Hola%20Daniel,%20vengo%20desde%20tu%20sitio%20web." 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ display: 'block', color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+            >
+              <div className="icon"><i className="fa fa-whatsapp"></i></div>
+              <h4>WhatsApp</h4>
+              <p>+57 313 580 44 24</p>
+            </a>
           </div>
+
           <div className="contact-info-item padd-15">
-            <div className="icon"><i className="fa fa-map-marker"></i></div>
-            <h4>Ciudad</h4>
-            <p>Medellín, Colombia</p>
+            <a 
+              href="https://www.google.com/maps/place/Medellín,+Antioquia,+Colombia" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ display: 'block', color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+            >
+              <div className="icon"><i className="fa fa-map-marker"></i></div>
+              <h4>Ciudad</h4>
+              <p>Medellín, Colombia</p>
+            </a>
           </div>
+
           <div className="contact-info-item padd-15">
-            <div className="icon"><i className="fa fa-envelope"></i></div>
-            <h4>Email</h4>
-            <p>danielstiven35@gmail.com</p>
+            <a 
+              href="mailto:danielstiven35@gmail.com"
+              style={{ display: 'block', color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+            >
+              <div className="icon"><i className="fa fa-envelope"></i></div>
+              <h4>Email</h4>
+              <p>danielstiven35@gmail.com</p>
+            </a>
           </div>
+
           <div className="contact-info-item padd-15">
-            <div className="icon"><i className="fa fa-globe"></i></div>
-            <h4>Sitio Web</h4>
-            <p>daniels35.lat</p>
+            <a 
+              href="https://daniels35.lat" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              style={{ display: 'block', color: 'inherit', textDecoration: 'none', cursor: 'pointer' }}
+            >
+              <div className="icon"><i className="fa fa-globe"></i></div>
+              <h4>Sitio Web</h4>
+              <p>daniels35.lat</p>
+            </a>
           </div>
         </div>
 
