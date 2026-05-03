@@ -3,6 +3,7 @@
 import { useState } from 'react';
 import PortfolioCard, { Project } from '@/components/PortfolioCard';
 import projectsData from '@/data/projects.json';
+import NextSectionButton from '@/components/NextSectionButton';
 
 interface ExtendedProject extends Project {
   category?: string;
@@ -111,8 +112,8 @@ export default function PortfolioSection({ isActive }: PortfolioSectionProps) {
             />
           ))}
         </div>
-
       </div>
+          <NextSectionButton target="about" text="Conoce más de mí" />
     </section>
   );
 }

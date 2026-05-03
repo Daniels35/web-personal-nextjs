@@ -1,4 +1,6 @@
 import TypingEffect from '@/components/TypingEffect';
+import NextSectionButton from '@/components/NextSectionButton';
+
 
 export default function HomeSection({ isActive }: { isActive: boolean }) {
   return (
@@ -85,8 +87,8 @@ export default function HomeSection({ isActive }: { isActive: boolean }) {
           <div className="home-img padd-15">
             <img src="/images/hero.PNG" alt="Daniel Stiven Diaz" />
           </div>
-
         </div>
+          <NextSectionButton target="portfolio" text="Ver mi trabajo" />
       </div>
     </section>
   );

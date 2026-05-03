@@ -10,6 +10,7 @@ import AboutSection from '@/sections/AboutSection';
 import ContactSection from '@/sections/ContactSection';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
+
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
 

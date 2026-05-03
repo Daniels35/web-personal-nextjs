@@ -1,4 +1,5 @@
 import React from 'react';
+import NextSectionButton from '@/components/NextSectionButton';
 
 export default function AboutSection({ isActive }: { isActive: boolean }) {
   return (
@@ -202,6 +203,7 @@ export default function AboutSection({ isActive }: { isActive: boolean }) {
           </div>
         </div>
       </div>
+        <NextSectionButton target="contact" text="¡Hablemos!" />
     </section>
   );
 }
