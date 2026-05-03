@@ -10,7 +10,6 @@ import AboutSection from '@/sections/AboutSection';
 import ContactSection from '@/sections/ContactSection';
 import WhatsAppButton from '@/components/WhatsAppButton';
 
-
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
 
@@ -30,6 +29,17 @@ export default function Home() {
     
     return () => window.removeEventListener('hashchange', handleHashChange);
   }, []);
+
+useEffect(() => {
+    const activeSectionElement = document.querySelector('.section.active');
+    
+    if (activeSectionElement) {
+      activeSectionElement.scrollTo({
+        top: 0,
+        behavior: 'smooth'
+      });
+    }
+  }, [activeSection]);
 
   return (
     <>
