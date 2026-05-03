@@ -14,9 +14,10 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
   // Obtenemos el año actual para que se actualice solo
   const currentYear = new Date().getFullYear();
 
-  const handleNavClick = (section: string) => {
+const handleNavClick = (section: string) => {
     setActiveSection(section);
     setIsOpen(false); 
+    window.location.hash = section; 
   };
 
   return (

@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import SmokeBackground from '@/components/SmokeBackground';
 import Sidebar from '@/components/Sidebar';
 import ThemeSwitcher from '@/components/ThemeSwitcher';
@@ -12,6 +12,23 @@ import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      const hash = window.location.hash.replace('#', '');
+      if (['home', 'portfolio', 'about', 'contact'].includes(hash)) {
+        setActiveSection(hash);
+      }
+    };
+
+    if (window.location.hash) {
+      handleHashChange();
+    }
+
+    window.addEventListener('hashchange', handleHashChange);
+    
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
 
   return (
     <>
