@@ -8,6 +8,7 @@ import HomeSection from '@/sections/HomeSection';
 import PortfolioSection from '@/sections/PortfolioSection';
 import AboutSection from '@/sections/AboutSection';
 import ContactSection from '@/sections/ContactSection';
+import WhatsAppButton from '@/components/WhatsAppButton';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');
@@ -28,6 +29,7 @@ export default function Home() {
       </div>
 
       <ThemeSwitcher />
+      <WhatsAppButton />
     </>
   );
 }
