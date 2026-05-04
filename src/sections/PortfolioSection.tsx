@@ -109,6 +109,7 @@ export default function PortfolioSection({ isActive }: PortfolioSectionProps) {
             <PortfolioCard 
               key={project.id} 
               project={project} 
+              onClick={() => {}}
             />
           ))}
         </div>
