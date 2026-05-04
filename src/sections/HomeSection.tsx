@@ -85,7 +85,7 @@ export default function HomeSection({ isActive }: { isActive: boolean }) {
           </div>
 
           <div className="home-img padd-15">
-            <img src="/images/hero.PNG" alt="Daniel Stiven Diaz" />
+            <img src="/images/hero.png" alt="Daniel Stiven Diaz" />
           </div>
         </div>
           <NextSectionButton target="portfolio" text="Ver mi trabajo" />
