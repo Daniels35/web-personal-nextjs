@@ -62,7 +62,7 @@ export default function ThemeSwitcher() {
       <div className="day-night s-icon" onClick={toggleMode}>
         <i className={`fas ${isDark ? 'fa-sun' : 'fa-moon'}`}></i>
       </div>
-      <h4>Color Theme</h4>
+      <h4>Tema Color</h4>
       <div className="colors">
         <span className="color-1" onClick={() => setActiveStyle('color-1')}></span>
         <span className="color-2" onClick={() => setActiveStyle('color-2')}></span>
@@ -71,7 +71,7 @@ export default function ThemeSwitcher() {
         <span className="color-5" onClick={() => setActiveStyle('color-5')}></span>
       </div>
       
-      <h4>Language</h4>
+      <h4>Idioma</h4>
       <div className="language">
         <button className="translate" id="es">ES</button>
         <button className="translate" id="en">EN</button>

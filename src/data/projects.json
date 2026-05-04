@@ -1,115 +1,224 @@
 [
   {
     "id": 1,
-    "title": "Firplak Logística",
-    "description": "Plataforma integral para la gestión de envíos y logística. Permite la trazabilidad en tiempo real y la automatización de correos.",
-    "category": "Full Stack",
-    "role": "Full Stack Developer",
-    "image": "/images/portfolio/portfolio-4.webp",
-    "images": [
-      "/images/portfolio/portfolio-4.webp", 
-      "/images/portfolio/portfolio-4.webp"
-    ],
-    "link": "https://www.proyectologistica.online",
-    "githubLink": "https://github.com/Daniels35/firplak",
-    "technologies": ["React", "Axios", "MySQL2", "Cloudinary", "Nodemailer", "Express"],
-    "collaborators": [
-      { "name": "Juan Pérez", "role": "Frontend", "linkedin": "https://linkedin.com/in/juan" }
-    ],
-    "date": "2023"
-  },
-  {
-    "id": 2,
     "title": "Car Wash Manager",
     "description": "Sistema SaaS para la administración completa de autolavados, incluyendo control de inventario, finanzas y reportes en Excel.",
     "category": "Full Stack",
-    "role": "Líder Técnico",
+    "role": "Full Stack Developer",
     "image": "/images/portfolio/portfolio-2.webp",
-    "images": ["/images/portfolio/portfolio-2.webp"],
+    "images": [
+      "/images/portfolio/portfolio-2.webp"
+    ],
     "link": "https://carwashmanager.online/",
-    "technologies": ["React", "Date-fns", "Exceljs", "Firebase", "Redux-toolkit", "Cloud-functions"],
+    "githubLink": "",
+    "youtubeLink": "https://youtu.be/t393SSZLqjc",
+    "technologies": [
+      "React",
+      "Date-fns",
+      "Exceljs",
+      "Firebase",
+      "Redux-toolkit",
+      "Cloud-functions"
+    ],
+    "collaborators": [],
+    "date": "2024"
+  },
+  {
+    "id": 2,
+    "title": "Start Bussines",
+    "description": "Landing page corporativa de alto rendimiento con sistema de autenticación y envío de correos automatizado.",
+    "category": "Full Stack",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-6.webp",
+    "images": [
+      "/images/portfolio/portfolio-6.webp"
+    ],
+    "link": "https://start-bussines.vercel.app",
+    "githubLink": "",
+    "youtubeLink": "https://youtu.be/UL9C3FirbUE",
+    "technologies": [
+      "Next Js",
+      "Tailwindcss",
+      "Postgresql",
+      "Next-auth",
+      "Nodemailer"
+    ],
     "collaborators": [],
     "date": "2024"
   },
   {
     "id": 3,
-    "title": "Start Bussines",
-    "description": "Landing page corporativa de alto rendimiento con sistema de autenticación y envío de correos automatizado.",
-    "category": "Frontend",
-    "role": "Frontend Developer",
-    "image": "/images/portfolio/portfolio-6.webp",
-    "images": ["/images/portfolio/portfolio-6.webp"],
-    "link": "https://start-bussines.vercel.app",
-    "technologies": ["Next Js", "Tailwindcss", "Postgresql", "Next-auth", "Nodemailer"],
-    "collaborators": [
-      { "name": "Ana Gómez", "role": "UX/UI Designer" }
-    ],
-    "date": "2024"
-  },
-  {
-    "id": 4,
     "title": "Henry Encuestas",
     "description": "Aplicación interactiva para la creación, gestión y análisis de encuestas dinámicas.",
     "category": "Full Stack",
     "role": "Full Stack Developer",
     "image": "/images/portfolio/portfolio-3.webp",
-    "images": ["/images/portfolio/portfolio-3.webp"],
+    "images": [
+      "/images/portfolio/portfolio-3.webp"
+    ],
     "link": "https://daniels35.github.io/encuestasHenry/",
-    "technologies": ["React", "MySQL2", "Cors", "Nodemailer", "Express"],
+    "githubLink": "",
+    "youtubeLink": "",
+    "technologies": [
+      "React",
+      "MySQL2",
+      "Cors",
+      "Nodemailer",
+      "Express"
+    ],
     "collaborators": [],
     "date": "2023"
   },
   {
-    "id": 5,
+    "id": 4,
     "title": "Pinzas Lasvi",
     "description": "E-commerce y catálogo digital interactivo de productos para la marca de pinzas Lasvi.",
-    "category": "Frontend",
-    "role": "Frontend Developer",
-    "image": "/images/portfolio/portfolio-1.webp",
-    "images": ["/images/portfolio/portfolio-1.webp"],
-    "link": "https://daniels35.github.io/lasvipagina/",
-    "technologies": ["React", "Axios", "React-carousel", "React-hook-form", "MySQL2"],
-    "collaborators": [],
-    "date": "2023"
-  },
-  {
-    "id": 6,
-    "title": "Videogames",
-    "description": "Catálogo interactivo de videojuegos consumiendo una API externa con opciones avanzadas de filtrado y búsqueda.",
     "category": "Full Stack",
     "role": "Full Stack Developer",
-    "image": "/images/portfolio/portfolio-5.webp",
-    "images": ["/images/portfolio/portfolio-5.webp"],
-    "link": "https://daniels35.github.io/VideoGame",
-    "technologies": ["React", "Axios", "Cloud Functions", "Postgresql", "Tsparticles", "Redux Thunk"],
+    "image": "/images/portfolio/portfolio-1.webp",
+    "images": [
+      "/images/portfolio/portfolio-1.webp"
+    ],
+    "link": "https://daniels35.github.io/lasvipagina/",
+    "githubLink": "",
+    "youtubeLink": "",
+    "technologies": [
+      "React",
+      "Axios",
+      "React-carousel",
+      "React-hook-form",
+      "MySQL2"
+    ],
     "collaborators": [],
     "date": "2023"
+  }, 
+  {
+    "id": 5,
+    "title": "Funnelhot Assistants Module",
+    "description": "Módulo de gestión de asistentes desarrollado como prueba técnica. Interfaz moderna y optimizada que implementa un CRUD completo con persistencia de datos local y sistema de notificaciones.",
+    "category": "Frontend",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-funell.webp",
+    "images": [
+      "/images/portfolio/portfolio-funell-1.webp",
+      "/images/portfolio/portfolio-funell-2.webp",
+      "/images/portfolio/portfolio-funell-3.webp",
+      "/images/portfolio/portfolio-funell-4.webp"
+    ],
+    "link": "https://funnelhot-assistants-module.vercel.app/",
+    "githubLink": "https://github.com/Daniels35/funnelhot-assistants",
+    "youtubeLink": "https://youtu.be/sPVZbIJ03JU",
+    "technologies": [
+      "Next.js 16",
+      "React 19",
+      "TypeScript",
+      "Tailwind CSS v4",
+      "Lucide React",
+      "Sonner"
+    ],
+    "collaborators": [],
+    "date": "2026"
+  },
+{
+    "id": 6,
+    "title": "Plugin Directorio de Academias",
+    "description": "Plugin completo y a la medida para WordPress. Incluye desarrollo frontend y backend con base de datos MySQL propia. Integra Google Maps API (Maps, Places, Geocoding) para búsqueda y geolocalización de academias en tiempo real.",
+    "category": "Plugin Wordpress",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-academia.webp",
+    "images": [
+      "/images/portfolio/portfolio-academia.webp",
+      "/images/portfolio/portfolio-academia-1.webp",
+      "/images/portfolio/portfolio-academia-2.webp",
+      "/images/portfolio/portfolio-academia-3.webp",
+      "/images/portfolio/portfolio-academia-4.webp"
+    ],
+    "link": "https://www.arabesquecolombia.com/directorio-academias/",
+    "githubLink": "https://github.com/Daniels35/pluginacademias",
+    "youtubeLink": "https://youtu.be/_gnuAiz0egc",
+    "technologies": [
+      "WordPress",
+      "PHP",
+      "MySQL",
+      "JavaScript",
+      "Google Maps API"
+    ],
+    "collaborators": [],
+    "date": "2024"
   },
   {
     "id": 7,
-    "title": "WooCommerce Custom Payment Gateway",
-    "description": "Desarrollo de plugin personalizado en PHP para integrar una pasarela de pagos local directamente en el flujo de checkout de WooCommerce.",
-    "category": "Plugins & CMS",
-    "role": "Desarrollador PHP",
-    "image": "/images/portfolio/plugin-test.webp",
-    "images": ["/images/portfolio/plugin-test.webp"],
-    "link": "https://tu-sitio.com/demo-plugin",
-    "githubLink": "https://github.com/Daniels35/woo-custom-gateway",
-    "technologies": ["PHP", "WordPress API", "JavaScript", "WooCommerce Hooks"],
+    "title": "Mallas Antioquia",
+    "description": "Sitio web corporativo y catálogo digital desarrollado a medida. Construido para ser totalmente autogestionable, con un diseño responsivo enfocado en la experiencia de usuario (UX) y optimizado para SEO y conversión.",
+    "category": "WordPress",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-mallas.webp",
+    "images": [
+      "/images/portfolio/portfolio-mallas.webp",
+      "/images/portfolio/portfolio-mallas-1.webp",
+      "/images/portfolio/portfolio-mallas-2.webp",
+      "/images/portfolio/portfolio-mallas-3.webp"
+    ],
+    "link": "https://mallasantioquia.com/",
+    "githubLink": "",
+    "youtubeLink": "https://youtu.be/NyfK6xThi-E",
+    "technologies": [
+      "WordPress",
+      "Elementor Pro",
+      "CSS",
+      "SEO"
+    ],
     "collaborators": [],
     "date": "2025"
   },
   {
     "id": 8,
-    "title": "API RESTful de Pagos",
-    "description": "Arquitectura de microservicios para procesamiento de pagos usando Node.js, Express y PostgreSQL con autenticación JWT.",
-    "category": "Backend",
-    "role": "Backend Developer",
-    "image": "/images/portfolio/backend-test.webp",
-    "images": ["/images/portfolio/backend-test.webp"],
+    "title": "Cooperativa Coy-Amor",
+    "description": "Desarrollo, actualización y mantenimiento continuo de sitio web corporativo. Destaca por la implementación de configuraciones robustas de ciberseguridad y estrategias de SEO, asegurando un entorno protegido, estable y de alto rendimiento.",
+    "category": "WordPress",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-coyamor.webp",
+    "images": [
+      "/images/portfolio/portfolio-coyamor.webp",
+      "/images/portfolio/portfolio-coyamor-1.webp",
+      "/images/portfolio/portfolio-coyamor-2.webp"
+    ],
+    "link": "https://coyamor.com/",
+    "githubLink": "",
+    "youtubeLink": "https://youtu.be/pujqu6dAcbg",
+    "technologies": [
+      "WordPress",
+      "Elementor Pro",
+      "Ciberseguridad",
+      "SEO"
+    ],
+    "collaborators": [],
+    "date": "2026"
+  },
+  {
+    "id": 9,
+    "title": "Intranet Tag Marketing",
+    "description": "Desarrollo Full Stack de una intranet corporativa para la gestión y optimización de procesos internos. Arquitectura basada en Node.js y MySQL, con un despliegue exitoso y configuraciones personalizadas en un entorno de hosting compartido.",
+    "category": "Full Stack",
+    "role": "Full Stack Developer",
+    "image": "/images/portfolio/portfolio-intranet.webp",
+    "images": [
+      "/images/portfolio/portfolio-intranet.webp",
+      "/images/portfolio/portfolio-intranet-1.webp",
+      "/images/portfolio/portfolio-intranet-2.webp",
+      "/images/portfolio/portfolio-intranet-3.webp",
+      "/images/portfolio/portfolio-intranet-4.webp",
+      "/images/portfolio/portfolio-intranet-5.webp"
+    ],
     "link": "",
-    "githubLink": "https://github.com/Daniels35/api-pagos",
-    "technologies": ["Node.js", "Express", "PostgreSQL", "JWT", "Docker"],
+    "githubLink": "https://github.com/Daniels35/intranet-tag-marketing",
+    "youtubeLink": "https://youtu.be/LGTs5vMceoY",
+    "technologies": [
+      "Node.js",
+      "Express",
+      "MySQL",
+      "Shared Hosting"
+    ],
     "collaborators": [],
     "date": "2025"
   }
