@@ -7,7 +7,6 @@ import NextSectionButton from '@/components/NextSectionButton';
 
 interface ExtendedProject extends Project {
   category?: string;
-  date?: string; // Aseguramos que TypeScript sepa que existe la fecha
 }
 
 interface PortfolioSectionProps {
@@ -15,11 +14,10 @@ interface PortfolioSectionProps {
 }
 
 export default function PortfolioSection({ isActive }: PortfolioSectionProps) {
-  // Aquí hacemos la magia: ordenamos el array de mayor a menor según el año
   const projects = (projectsData as ExtendedProject[]).sort((a, b) => {
-    const yearA = parseInt(a.date || '0', 10);
-    const yearB = parseInt(b.date || '0', 10);
-    return yearB - yearA; // Orden descendente (más recientes primero)
+    const yearA = parseInt(a.date, 10);
+    const yearB = parseInt(b.date, 10);
+    return yearB - yearA; 
   });
   
   const [filter, setFilter] = useState('Todos');
