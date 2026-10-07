@@ -1,5 +1,5 @@
 import React from 'react';
-import NextSectionButton from '@/components/NextSectionButton';
+import NextSectionButton from '@/features/legacy/components/NextSectionButton';
 
 export default function AboutSection({ isActive }: { isActive: boolean }) {
   return (

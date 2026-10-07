@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
+import "./legacy.css";
 
 export const metadata: Metadata = {
   title: "Daniel Diaz",
@@ -20,12 +20,12 @@ export default function RootLayout({
         <link rel="stylesheet" href="/css/style.css" />
         <link rel="stylesheet" href="/css/style-switcher.css" />
         
-        {/* Aplicamos el bypass de TypeScript usando spread y 'as any' */}
+        {/* Aplicamos el bypass de TypeScript usando spread y 'as React.LinkHTMLAttributes<HTMLLinkElement>' */}
         <link rel="stylesheet" href="/css/skins/color-1.css" className="alternate-style" title="color-1" />
-        <link rel="stylesheet" href="/css/skins/color-2.css" className="alternate-style" title="color-2" {...({ disabled: true } as any)} />
-        <link rel="stylesheet" href="/css/skins/color-3.css" className="alternate-style" title="color-3" {...({ disabled: true } as any)} />
-        <link rel="stylesheet" href="/css/skins/color-4.css" className="alternate-style" title="color-4" {...({ disabled: true } as any)} />
-        <link rel="stylesheet" href="/css/skins/color-5.css" className="alternate-style" title="color-5" {...({ disabled: true } as any)} />
+        <link rel="stylesheet" href="/css/skins/color-2.css" className="alternate-style" title="color-2" {...({ disabled: true } as React.LinkHTMLAttributes<HTMLLinkElement>)} />
+        <link rel="stylesheet" href="/css/skins/color-3.css" className="alternate-style" title="color-3" {...({ disabled: true } as React.LinkHTMLAttributes<HTMLLinkElement>)} />
+        <link rel="stylesheet" href="/css/skins/color-4.css" className="alternate-style" title="color-4" {...({ disabled: true } as React.LinkHTMLAttributes<HTMLLinkElement>)} />
+        <link rel="stylesheet" href="/css/skins/color-5.css" className="alternate-style" title="color-5" {...({ disabled: true } as React.LinkHTMLAttributes<HTMLLinkElement>)} />
       </head>
       <body>
         {children}

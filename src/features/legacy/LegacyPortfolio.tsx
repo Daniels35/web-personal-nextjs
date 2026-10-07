@@ -1,14 +1,14 @@
 "use client";
 
 import { useState, useEffect } from 'react';
-import SmokeBackground from '@/components/SmokeBackground';
-import Sidebar from '@/components/Sidebar';
-import ThemeSwitcher from '@/components/ThemeSwitcher';
-import HomeSection from '@/sections/HomeSection';
-import PortfolioSection from '@/sections/PortfolioSection';
-import AboutSection from '@/sections/AboutSection';
-import ContactSection from '@/sections/ContactSection';
-import WhatsAppButton from '@/components/WhatsAppButton';
+import SmokeBackground from '@/features/legacy/components/SmokeBackground';
+import Sidebar from '@/features/legacy/components/Sidebar';
+import ThemeSwitcher from '@/features/legacy/components/ThemeSwitcher';
+import HomeSection from '@/features/legacy/sections/HomeSection';
+import PortfolioSection from '@/features/legacy/sections/PortfolioSection';
+import AboutSection from '@/features/legacy/sections/AboutSection';
+import ContactSection from '@/features/legacy/sections/ContactSection';
+import WhatsAppButton from '@/features/legacy/components/WhatsAppButton';
 
 export default function Home() {
   const [activeSection, setActiveSection] = useState('home');

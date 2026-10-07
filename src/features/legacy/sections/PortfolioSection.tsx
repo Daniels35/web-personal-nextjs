@@ -1,9 +1,9 @@
 "use client";
 
 import { useState } from 'react';
-import PortfolioCard, { Project } from '@/components/PortfolioCard';
+import PortfolioCard, { Project } from '@/features/legacy/components/PortfolioCard';
 import projectsData from '@/data/projects.json';
-import NextSectionButton from '@/components/NextSectionButton';
+import NextSectionButton from '@/features/legacy/components/NextSectionButton';
 
 interface ExtendedProject extends Project {
   category?: string;

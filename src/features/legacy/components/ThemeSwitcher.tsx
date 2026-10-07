@@ -2,34 +2,7 @@
 
 import { useEffect, useState } from 'react';
 
-export default function ThemeSwitcher() {
-  const [isOpen, setIsOpen] = useState(false);
-  const [isDark, setIsDark] = useState(false);
-
-  useEffect(() => {
-    const savedMode = localStorage.getItem('themeMode');
-    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
-    
-    if (savedMode === 'dark' || (!savedMode && prefersDark)) {
-      document.body.classList.add('dark');
-      setIsDark(true);
-    } else {
-      document.body.classList.remove('dark');
-      setIsDark(false);
-    }
-
-    const savedColor = localStorage.getItem('themeColor') || 'color-1';
-    setActiveStyle(savedColor);
-
-    const handleScroll = () => {
-      if (isOpen) setIsOpen(false);
-    };
-    window.addEventListener("scroll", handleScroll);
-    
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, [isOpen]);
-
-  const setActiveStyle = (color: string) => {
+  function setActiveStyle(color: string) {
     const alternateStyles = document.querySelectorAll(".alternate-style");
     alternateStyles.forEach((style) => {
       if (color === style.getAttribute("title")) {
@@ -40,6 +13,33 @@ export default function ThemeSwitcher() {
     });
     localStorage.setItem('themeColor', color);
   };
+
+
+export default function ThemeSwitcher() {
+  const [isOpen, setIsOpen] = useState(false);
+  const [isDark, setIsDark] = useState(false);
+
+  useEffect(() => {
+    const savedMode = localStorage.getItem('themeMode');
+    const prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+    
+    if (savedMode === 'dark' || (!savedMode && prefersDark)) {
+      document.body.classList.add('dark');
+    } else {
+      document.body.classList.remove('dark');
+    }
+    const frame = requestAnimationFrame(() => setIsDark(document.body.classList.contains('dark')));
+
+    const savedColor = localStorage.getItem('themeColor') || 'color-1';
+    setActiveStyle(savedColor);
+
+    const handleScroll = () => {
+      if (isOpen) setIsOpen(false);
+    };
+    window.addEventListener("scroll", handleScroll);
+    
+    return () => { cancelAnimationFrame(frame); window.removeEventListener("scroll", handleScroll); };
+  }, [isOpen]);
 
   const toggleMode = () => {
     const newIsDark = !isDark;

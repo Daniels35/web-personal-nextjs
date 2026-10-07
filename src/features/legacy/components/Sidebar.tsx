@@ -17,7 +17,7 @@ export default function Sidebar({ activeSection, setActiveSection }: SidebarProp
 const handleNavClick = (section: string) => {
     setActiveSection(section);
     setIsOpen(false); 
-    window.location.hash = section; 
+    window.location.assign(`#${section}`);
   };
 
   return (

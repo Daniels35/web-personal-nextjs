@@ -1,5 +1,5 @@
-import TypingEffect from '@/components/TypingEffect';
-import NextSectionButton from '@/components/NextSectionButton';
+import TypingEffect from '@/features/legacy/components/TypingEffect';
+import NextSectionButton from '@/features/legacy/components/NextSectionButton';
 
 
 export default function HomeSection({ isActive }: { isActive: boolean }) {
