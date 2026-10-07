@@ -4,6 +4,11 @@ import "./legacy.css";
 export const metadata: Metadata = {
   title: "Daniel Diaz",
   description: "Página personal de Daniel Diaz, desarrollador de software.",
+  icons: {
+    icon: [{ url: "/brand/horus-gold.png", type: "image/png" }],
+    shortcut: "/brand/horus-gold.png",
+    apple: "/brand/horus-gold.png",
+  },
 };
 
 export default function RootLayout({
